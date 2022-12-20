@@ -82,6 +82,9 @@ end)
 vim.keymap.set('n', ';gg', function()
   builtin.git_status()
 end)
+vim.keymap.set('n', ';g', function()
+  telescope.extensions.lazygit.lazygit()
+end)
 vim.keymap.set("n", "sf", function()
   telescope.extensions.file_browser.file_browser({
     path = "%:p:h",

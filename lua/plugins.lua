@@ -24,6 +24,7 @@ packer.startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'folke/tokyonight.nvim'
 
+  use 'kdheepak/lazygit.nvim'
   use 'gruvbox-community/gruvbox'
 
   use 'glepnir/lspsaga.nvim' -- LSP UIs
