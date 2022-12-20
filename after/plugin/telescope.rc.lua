@@ -91,6 +91,6 @@ vim.keymap.set("n", "sf", function()
     grouped = true,
     previewer = false,
     initial_mode = "normal",
-    layout_config = { height = 40 }
+    layout_config = { height = 50 }
   })
 end)

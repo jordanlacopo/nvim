@@ -16,6 +16,7 @@ packer.startup(function(use)
   use 'hrsh7th/nvim-cmp' -- Completion
   use 'neovim/nvim-lspconfig' -- LSP
   use 'Mofiqul/dracula.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
   --use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
   use 'williamboman/mason.nvim'
@@ -23,10 +24,8 @@ packer.startup(function(use)
   use 'williamboman/mason-lspconfig.nvim'
   use 'folke/tokyonight.nvim'
 
-  use {
-    'svrana/neosolarized.nvim',
-    requires = { 'tjdevries/colorbuddy.nvim' }
-  }
+  use 'gruvbox-community/gruvbox'
+
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'L3MON4D3/LuaSnip'
   use {
