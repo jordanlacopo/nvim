@@ -8,7 +8,7 @@ require("catppuccin").setup({
     dark = "mocha",
   },
   transparent_background = true,
-  term_colors = false,
+  term_colors = true,
   dim_inactive = {
     enabled = false,
     shade = "dark",
@@ -44,4 +44,3 @@ require("catppuccin").setup({
 })
 
 vim.cmd [[colorscheme catppuccin]]
---vim.g.theprimeagen_colorscheme = "tokyonight"
