@@ -1,17 +1,10 @@
-local status, saga = pcall(require, "lspsaga")
-if (not status) then return end
+local keymap = vim.keymap.set
+local saga = require('lspsaga')
 
-saga.init_lsp_saga {
-  server_filetype_map = {
-    typescript = 'typescript',
-    custom_kind = require("catppuccin.groups.integrations.lsp_saga").custom_kind(),
-  }
-}
+saga.init_lsp_saga()
 
-local opts = { noremap = true, silent = true }
-vim.keymap.set('n', '<C-j>', '<Cmd>Lspsaga diagnostic_jump_next<CR>', opts)
-vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', opts)
-vim.keymap.set('n', 'gd', '<Cmd>Lspsaga lsp_finder<CR>', opts)
-vim.keymap.set('i', '<C-k>', '<Cmd>Lspsaga signature_help<CR>', opts)
-vim.keymap.set('n', 'gp', '<Cmd>Lspsaga preview_definition<CR>', opts)
-vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', opts)
+-- Lsp finder find the symbol definition implement reference
+-- if there is no implement it will hide
+-- when you use action in finder like open vsplit then you can
+-- use <C-t> to jump back
+keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", { silent = true })
