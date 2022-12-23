@@ -11,11 +11,18 @@ local fb_actions = require "telescope".extensions.file_browser.actions
 
 telescope.setup {
   defaults = {
+    -- other layout configuration here
     mappings = {
       n = {
         ["q"] = actions.close
       },
     },
+  },
+  pickers = {
+    find_files = {
+    },
+    live_grep = {
+    }
   },
   extensions = {
     file_browser = {
