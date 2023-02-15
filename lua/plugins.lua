@@ -17,7 +17,9 @@ packer.startup(function(use)
   use 'neovim/nvim-lspconfig' -- LSP
   use 'Mofiqul/dracula.nvim'
   use { "catppuccin/nvim", as = "catppuccin" }
-  --use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
+  use "rebelot/kanagawa.nvim"
+
+  use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
   use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
   use 'williamboman/mason.nvim'
   use 'navarasu/onedark.nvim'

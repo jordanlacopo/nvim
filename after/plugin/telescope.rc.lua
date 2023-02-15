@@ -53,7 +53,7 @@ vim.keymap.set('n', ';f',
   function()
     builtin.find_files({
       file_ignore_patterns = { ".git/", ".cache", "%.o", "%.a", "%.out", "%.class",
-        "%.pdf", "%.mkv", "%.mp4", "%.zip" },
+        "%.pdf", "%.mkv", "%.mp4", "%.zip", "/fish" },
       no_ignore = false,
       hidden = true
     })

@@ -1,3 +1,4 @@
+
 -- Lua
 --
 -- set custom lualine background color
